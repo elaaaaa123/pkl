@@ -1,0 +1,22 @@
+/* src/styles/LogoBar.css */
+.logo-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 68px;
+    gap: 100px;
+    width: 100%;
+    max-width: 1280px;
+    height: 130px;
+    background-color: #FFFFFF;
+}
+
+.logo-bar img {
+    max-width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+    max-height: 100px; /* Tinggi maksimum untuk gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    width: auto; /* Lebar otomatis untuk menjaga rasio aspek */
+    object-fit: contain; /* Menjaga rasio aspek dan menghindari distorsi */
+    margin: 0; /* Menghapus margin jika tidak diperlukan */
+}

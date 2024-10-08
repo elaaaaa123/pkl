@@ -1,0 +1,114 @@
+/* login.css */
+
+/* Styling untuk kontainer utama */
+.sektor-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Warna latar belakang putih untuk kontras */
+    border-radius: 10px; /* Sudut membulat yang lebih besar */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih halus */
+  }
+  
+  /* Styling untuk kotak pencarian */
+  .sektor-box {
+    margin-bottom: 20px;
+  }
+  
+  /* Judul pencarian */
+  .sektor-title {
+    font-size: 26px; /* Ukuran font yang lebih besar */
+    font-weight: 700; /* Ketebalan font yang lebih tebal */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 20px; /* Jarak bawah */
+    color: #333; /* Warna teks yang lebih gelap */
+  }
+  
+  /* Styling untuk form */
+  .sektor-form {
+    display: flex;
+    flex-direction: column; /* Mengatur kolom */
+  }
+  
+  /* Input dan select styling */
+  .sektor-input {
+    padding: 12px; /* Padding dalam input */
+    margin-bottom: 15px; /* Jarak bawah */
+    border: 1px solid #ccc; /* Batas */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran font */
+    transition: border-color 0.3s; /* Transisi saat hover */
+  }
+  
+  .sektor-input:focus {
+    border-color: #007bff; /* Warna batas saat fokus */
+    outline: none; /* Menghapus outline default */
+  }
+  
+  /* Tombol styling */
+  .sektor-button {
+    padding: 12px; /* Padding dalam tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus batas */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan pointer saat hover */
+    font-size: 16px; /* Ukuran font */
+    transition: background-color 0.3s; /* Transisi saat hover */
+  }
+  
+  .sektor-button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+  }
+  
+  /* Styling untuk tabel hasil pencarian */
+  .hasil-container {
+    margin-top: 20px; /* Jarak atas */
+  }
+  
+  .hasil-title {
+    font-size: 22px; /* Ukuran font untuk judul hasil */
+    margin-bottom: 10px; /* Jarak bawah */
+    color: #333; /* Warna teks */
+  }
+  
+  /* Tabel styling */
+  .hasil-table {
+    width: 100%; /* Lebar penuh */
+    border-collapse: collapse; /* Menggabungkan batas */
+  }
+  
+  .hasil-table th,
+  .hasil-table td {
+    padding: 12px; /* Padding dalam sel */
+    border: 1px solid #ccc; /* Batas */
+    text-align: left; /* Teks rata kiri */
+    transition: background-color 0.3s; /* Transisi saat hover */
+  }
+  
+  .hasil-table th {
+    background-color: #007bff; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+  }
+  
+  /* Hover efek pada sel tabel */
+  .hasil-table tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Warna latar belakang saat hover */
+  }
+  
+  /* Pesan error */
+  .error-message {
+    color: red; /* Warna teks untuk pesan error */
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px; /* Jarak atas */
+    font-weight: 600; /* Ketebalan font */
+  }
+  
+  /* Pesan tidak ada data */
+  .no-data-message {
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px; /* Jarak atas */
+    font-size: 18px; /* Ukuran font */
+    color: #666; /* Warna teks */
+  }
+  

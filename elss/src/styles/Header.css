@@ -1,0 +1,154 @@
+/* Version=1 */
+
+.header {
+    width: Fill (1,280px)px;
+    height: Hug (444px)px;
+    padding: 42px 24px 42px 24px;
+    gap: 68px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+}    
+
+/* Branding Section */
+.branding-section {
+    width: 100%;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Membuat jarak antara konten dan gambar */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    padding: 42px 24px;
+    gap: 42px; /* Jarak antar elemen */
+}
+
+
+/* Header Content */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 48px;
+    width: 620px;
+    min-width: 320px;
+    max-width: 620px;
+    height: 328px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+/* Title & Subtitle */
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 620px;
+    height: 202px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Subtitle */
+.subtitle {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px; /* Gaya Subtitle */
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #2D2D2D;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Title (Visual Designer) */
+.title {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #2D2D2D;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Main Title */
+.main-title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 68px; /* Gaya H1 */
+    font-weight: 600;
+    line-height: 69.7px;
+    text-align: left;
+    color: #2D2D2D;
+}
+
+/* Description */
+.description {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Button */
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 64px;
+    gap: 10px;
+    width: 211px;
+    height: 78px;
+    background: #2D2D2D;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Button Text */
+.button-text {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Header Image */
+.header-image {
+    width: 580px;
+    height: 360px;
+    min-width: 320px;
+    max-width: 480px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 90px;
+    
+    
+}

@@ -1,0 +1,90 @@
+.buku-digital-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.buku-digital-box {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: box-shadow 0.3s;
+}
+
+.buku-digital-box:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buku-digital-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.result-table {
+    margin-top: 20px;
+}
+
+.result-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #312ecf;
+    font-weight: bold;
+}
+
+.detail-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.detail-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.pdf-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pdf-preview button {
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pdf-preview button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}

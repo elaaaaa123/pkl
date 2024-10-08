@@ -1,0 +1,58 @@
+/* styles/skills.css */
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Mengubah alignment jika diperlukan */
+    justify-content: space-between;
+    gap: 42px 68px;
+    padding: 42px 24px;
+    max-width: 1280px; /* Menggunakan max-width agar lebih responsif */
+    margin: 0 auto; /* Menyelaraskan bagian tengah */
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px; /* Mengurangi padding untuk kesesuaian */
+    gap: 20px; /* Mengurangi gap */
+    width: 394.67px;
+    min-width: 320px;
+    height: auto; /* Menggunakan auto untuk ketinggian */
+    background: #FFFFFF;
+    border-radius: 10px; /* Sudut melengkung */
+    margin-top: 40px;
+}
+
+.skill-icon {
+    width: 124px;
+    height: 124px;
+}
+
+.skill-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.skill-card-title {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 42px;
+    color: #2D2D2D;
+    width: 310.67px; /* Sesuaikan jika diperlukan */
+}
+
+.skill-card-description {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
+    width: 310.67px; /* Sesuaikan jika diperlukan */
+    height: auto; /* Menggunakan auto untuk ketinggian */
+}

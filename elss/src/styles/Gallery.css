@@ -1,0 +1,74 @@
+/* src/styles/Gallery.css */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan elemen galeri */
+    gap: 24px; /* Jarak antara judul dan konten galeri */
+}
+
+.gallery-title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+}
+
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap; /* Biarkan konten galeri membungkus ke baris berikutnya */
+    gap: 20px; /* Jarak antara kartu galeri */
+    justify-content: center; /* Pusatkan kartu galeri */
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Rata kiri untuk konten dalam kartu */
+    width: 394.67px; /* Lebar kartu */
+    min-width: 320px; /* Lebar minimum untuk responsivitas */
+    border: 1px solid #ccc; /* Border untuk kartu */
+    border-radius: 8px; /* Sudut melengkung */
+    overflow: hidden; /* Menghindari konten meluap */
+    cursor: pointer; /* Menunjukkan bahwa kartu dapat diklik */
+    transition: transform 0.2s; /* Transisi saat hover */
+}
+
+.gallery-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.gallery-card-image {
+    width: 100%; /* Gambar mengisi lebar kartu */
+    height: 200px; /* Tinggi tetap untuk gambar */
+    object-fit: cover; /* Mempertahankan rasio aspek */
+}
+
+.project-title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 8px; /* Spasi di atas judul proyek */
+}
+
+.description {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.selected-image-container {
+    margin-top: 20px; /* Spasi di atas gambar yang dipilih */
+    text-align: center; /* Pusatkan gambar */
+}
+
+.selected-image {
+    max-width: 100%; /* Pastikan gambar tidak melebihi lebar kontainer */
+    max-height: 500px; /* Batasi tinggi maksimal gambar */
+    object-fit: cover; /* Pertahankan rasio aspek */
+    border: 2px solid #ccc; /* Tambahkan border */
+    border-radius: 8px; /* Sudut melengkung */
+}

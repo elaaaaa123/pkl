@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Styling untuk kontainer utama */
+.container {
+    max-width: 800px; /* Lebar maksimal kontainer */
+    margin: 0 auto; /* Pusatkan kontainer */
+    padding: 20px; /* Padding dalam kontainer */
+    background-color: #f9f9f9; /* Warna latar belakang */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+  }
+  
+  /* Judul halaman */
+  .title {
+    font-size: 32px; /* Ukuran font judul */
+    font-weight: bold; /* Ketebalan font */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 20px; /* Jarak bawah */
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column; /* Mengatur kolom */
+  }
+  
+  /* Input styling */
+  .input {
+    padding: 10px; /* Padding dalam input */
+    margin-bottom: 15px; /* Jarak bawah */
+    border: 1px solid #ccc; /* Batas */
+    border-radius: 4px; /* Sudut membulat */
+  }
+  
+  /* Tombol styling */
+  .button {
+    padding: 10px; /* Padding dalam tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus batas */
+    border-radius: 4px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan pointer saat hover */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+  }
+  
+  /* Konten styling */
+  .content {
+    font-size: 16px; /* Ukuran font untuk konten */
+    color: #333; /* Warna teks konten */
+    line-height: 1.5; /* Jarak antar baris */
+  }
+  
+  /* Styling untuk tabel hasil pencarian (jika ada) */
+  .table {
+    width: 100%; /* Lebar penuh */
+    border-collapse: collapse; /* Menggabungkan batas */
+    margin-top: 20px; /* Jarak atas */
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px; /* Padding dalam sel */
+    border: 1px solid #ccc; /* Batas */
+    text-align: left; /* Teks rata kiri */
+  }
+  
+  .table th {
+    background-color: #007bff; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+  }
+  
+  /* Pesan error */
+  .error-message {
+    color: red; /* Warna teks untuk pesan error */
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px; /* Jarak atas */
+  }
+  
+  /* Pesan tidak ada data */
+  .no-data-message {
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px; /* Jarak atas */
+    font-size: 18px; /* Ukuran font */
+    color: #666; /* Warna teks */
+  }
+  
