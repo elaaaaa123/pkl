@@ -13,6 +13,8 @@ const Sektoral = () => {
   const [selectedOPD, setSelectedOPD] = useState("");
   const [selectedUrusan, setSelectedUrusan] = useState("");
   const [dataHasil, setDataHasil] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const perPage = 20; // Jumlah item per halaman
 
   useEffect(() => {
     const fetchDataOPD = async () => {
@@ -28,7 +30,6 @@ const Sektoral = () => {
     fetchDataOPD();
   }, []);
 
-  // Mengambil urusan saat OPD dipilih
   const handleOPDChange = async (e) => {
     const opdId = e.target.value;
     setSelectedOPD(opdId);
@@ -68,6 +69,7 @@ const Sektoral = () => {
       });
       setDataHasil(response.data);
       setError(null);
+      setCurrentPage(1); // Reset ke halaman pertama setelah pencarian baru
     } catch (error) {
       setError("Terjadi kesalahan saat mengambil data.");
       Swal.fire("Error", "Terjadi kesalahan saat mengambil data", "error");
@@ -75,6 +77,12 @@ const Sektoral = () => {
       setLoading(false);
     }
   };
+
+  // Pagination logic
+  const indexOfLastItem = currentPage * perPage;
+  const indexOfFirstItem = indexOfLastItem - perPage;
+  const currentData = dataHasil.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(dataHasil.length / perPage);
 
   return (
     <div className="sektoral-container">
@@ -84,7 +92,7 @@ const Sektoral = () => {
           <select
             className="sektoral-input"
             value={selectedOPD}
-            onChange={handleOPDChange} // Panggil handler saat OPD dipilih
+            onChange={handleOPDChange}
           >
             <option value="">Pilih OPD</option>
             {opds.map((OPD) => (
@@ -98,7 +106,7 @@ const Sektoral = () => {
             className="sektoral-input"
             value={selectedUrusan}
             onChange={(e) => setSelectedUrusan(e.target.value)}
-            disabled={!selectedOPD} // Disable dropdown urusan jika OPD belum dipilih
+            disabled={!selectedOPD}
           >
             <option value="">Pilih Urusan</option>
             {urusans.map((Urusan) => (
@@ -147,8 +155,8 @@ const Sektoral = () => {
                 </tr>
               </thead>
               <tbody>
-                {dataHasil.length > 0 ? (
-                  dataHasil.map((item, index) => (
+                {currentData.length > 0 ? (
+                  currentData.map((item, index) => (
                     <tr key={index}>
                       <td>{item.uraian_dssd}</td>
                       <td>{item.satuan}</td>
@@ -158,11 +166,40 @@ const Sektoral = () => {
                   ))
                 ) : (
                   <tr>
-                    <td colSpan="6">Tidak ada data yang ditemukan</td>
+                    <td colSpan="4">Tidak ada data yang ditemukan</td>
                   </tr>
                 )}
               </tbody>
             </table>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="pagination">
+                <button
+                  onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                  disabled={currentPage === 1}
+                >
+                  Previous
+                </button>
+
+                {Array.from({ length: totalPages }, (_, i) => (
+                  <button
+                    key={i + 1}
+                    onClick={() => setCurrentPage(i + 1)}
+                    className={currentPage === i + 1 ? "active" : ""}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+
+                <button
+                  onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                >
+                  Next
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>

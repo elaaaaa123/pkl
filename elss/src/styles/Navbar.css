@@ -1,26 +1,74 @@
-/* Navbar.css */
-.navbar-item {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 27px;
-  color: #2D2D2D;
-  display: flex;
-  align-items: center;
-}
-.navbar {
-  height: 78px;
-  background-color: #FFFFFF(231, 253, 253);
-  border-bottom:5px solid rgb(156, 154, 154);
-}
+/* src/styles/Navbar.css */
 
 .navbar-menu {
   display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-  width: 209px;
-  height: 27px;
-  margin-right: 30px;
-  margin-left: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Ubah background jadi putih */
+  padding: 10px 20px;
+  color: black; /* Ubah warna teks agar kontras dengan background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek shadow */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px; /* Sesuaikan ukuran logo */
+  height: auto;
+  margin-right: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Jarak antar item */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black; /* Ubah warna link menjadi hitam */
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover .navbar-item {
+  color: #4c82af; /* Warna saat hover */
+}
+
+.navbar-item {
+  font-size: 18px;
+  padding: 10px;
+  color: black; /* Warna item jadi hitam */
+}
+
+/* Tombol logout berbentuk oval */
+.navbar-logout {
+  background-color: rgb(192, 58, 58); /* Ubah background jadi hijau atau sesuai keinginan */
+  color: white;
+  border: none;
+  padding: 10px 30px; /* Padding untuk memberi efek oval */
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50px; /* Border radius tinggi untuk membuat bentuk oval */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-logout:hover {
+  background-color: #45a049; /* Warna lebih gelap saat hover */
+}
+
+/* src/styles/Navbar.css */
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* Posisikan logo dan teks sejajar secara vertikal */
+}
+
+.navbar-title {
+  margin-left: 10px; /* Jarak antara logo dan teks */
+  font-size: 24px; /* Ukuran font sesuai kebutuhan */
+  color: #333; /* Warna teks sesuai kebutuhan */
 }

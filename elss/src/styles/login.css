@@ -1,114 +1,83 @@
-/* login.css */
+/* Mengatur gaya untuk kontainer login */
+.login-container {
+  max-width: 400px; /* Lebar maksimum kontainer */
+  margin: 100px auto; /* Mengatur margin atas dan bawah otomatis untuk menengah */
+  padding: 30px; /* Padding di dalam kontainer */
+  background-color: #ffffff; /* Warna latar belakang putih */
+  border-radius: 12px; /* Sudut melengkung */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transisi untuk efek hover */
+}
 
-/* Styling untuk kontainer utama */
-.sektor-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff; /* Warna latar belakang putih untuk kontras */
-    border-radius: 10px; /* Sudut membulat yang lebih besar */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih halus */
-  }
-  
-  /* Styling untuk kotak pencarian */
-  .sektor-box {
-    margin-bottom: 20px;
-  }
-  
-  /* Judul pencarian */
-  .sektor-title {
-    font-size: 26px; /* Ukuran font yang lebih besar */
-    font-weight: 700; /* Ketebalan font yang lebih tebal */
-    text-align: center; /* Pusatkan teks */
-    margin-bottom: 20px; /* Jarak bawah */
-    color: #333; /* Warna teks yang lebih gelap */
-  }
-  
-  /* Styling untuk form */
-  .sektor-form {
-    display: flex;
-    flex-direction: column; /* Mengatur kolom */
-  }
-  
-  /* Input dan select styling */
-  .sektor-input {
-    padding: 12px; /* Padding dalam input */
-    margin-bottom: 15px; /* Jarak bawah */
-    border: 1px solid #ccc; /* Batas */
-    border-radius: 5px; /* Sudut membulat */
-    font-size: 16px; /* Ukuran font */
-    transition: border-color 0.3s; /* Transisi saat hover */
-  }
-  
-  .sektor-input:focus {
-    border-color: #007bff; /* Warna batas saat fokus */
-    outline: none; /* Menghapus outline default */
-  }
-  
-  /* Tombol styling */
-  .sektor-button {
-    padding: 12px; /* Padding dalam tombol */
-    background-color: #007bff; /* Warna latar belakang tombol */
-    color: white; /* Warna teks tombol */
-    border: none; /* Menghapus batas */
-    border-radius: 5px; /* Sudut membulat */
-    cursor: pointer; /* Menunjukkan pointer saat hover */
-    font-size: 16px; /* Ukuran font */
-    transition: background-color 0.3s; /* Transisi saat hover */
-  }
-  
-  .sektor-button:hover {
-    background-color: #0056b3; /* Warna latar belakang tombol saat hover */
-  }
-  
-  /* Styling untuk tabel hasil pencarian */
-  .hasil-container {
-    margin-top: 20px; /* Jarak atas */
-  }
-  
-  .hasil-title {
-    font-size: 22px; /* Ukuran font untuk judul hasil */
-    margin-bottom: 10px; /* Jarak bawah */
-    color: #333; /* Warna teks */
-  }
-  
-  /* Tabel styling */
-  .hasil-table {
-    width: 100%; /* Lebar penuh */
-    border-collapse: collapse; /* Menggabungkan batas */
-  }
-  
-  .hasil-table th,
-  .hasil-table td {
-    padding: 12px; /* Padding dalam sel */
-    border: 1px solid #ccc; /* Batas */
-    text-align: left; /* Teks rata kiri */
-    transition: background-color 0.3s; /* Transisi saat hover */
-  }
-  
-  .hasil-table th {
-    background-color: #007bff; /* Warna latar belakang header */
-    color: white; /* Warna teks header */
-  }
-  
-  /* Hover efek pada sel tabel */
-  .hasil-table tr:hover {
-    background-color: rgba(0, 123, 255, 0.1); /* Warna latar belakang saat hover */
-  }
-  
-  /* Pesan error */
-  .error-message {
-    color: red; /* Warna teks untuk pesan error */
-    text-align: center; /* Pusatkan teks */
-    margin-top: 20px; /* Jarak atas */
-    font-weight: 600; /* Ketebalan font */
-  }
-  
-  /* Pesan tidak ada data */
-  .no-data-message {
-    text-align: center; /* Pusatkan teks */
-    margin-top: 20px; /* Jarak atas */
-    font-size: 18px; /* Ukuran font */
-    color: #666; /* Warna teks */
-  }
-  
+/* Efek hover pada kontainer */
+.login-container:hover {
+  transform: translateY(-5px); /* Mengangkat kontainer saat hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+/* Mengatur gaya untuk judul */
+.login-container h2 {
+  text-align: center; /* Teks tengah */
+  color: rgb(17, 4, 4); /* Warna teks */
+  margin-bottom: 30px; /* Jarak bawah */
+  font-family: 'Arial', sans-serif; /* Mengatur font */
+}
+
+/* Mengatur gaya untuk label input */
+.login-container label {
+  display: block; /* Membuat label menjadi block */
+  margin-bottom: 8px; /* Jarak bawah label */
+  font-weight: 600; /* Tebal */
+  color: #333; /* Warna teks */
+}
+
+/* Mengatur gaya untuk input field */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%; /* Lebar penuh */
+  padding: 12px; /* Padding dalam */
+  margin-bottom: 20px; /* Jarak bawah input */
+  border: 1px solid #ddd; /* Garis batas */
+  border-radius: 8px; /* Sudut melengkung */
+  font-size: 16px; /* Ukuran font */
+  transition: border-color 0.3s; /* Transisi untuk efek fokus */
+}
+
+/* Mengatur gaya saat input field fokus */
+.login-container input:focus {
+  border-color: rgb(192, 58, 58); /* Ubah warna batas saat fokus */
+  outline: none; /* Menghilangkan outline */
+  box-shadow: 0 0 5px rgba(192, 58, 58, 0.5); /* Bayangan lembut saat fokus */
+}
+
+/* Mengatur gaya untuk pesan error */
+.login-container p {
+  color: red; /* Warna merah untuk pesan error */
+  text-align: center; /* Teks tengah */
+  font-weight: bold; /* Tebal */
+  margin: 15px 0; /* Jarak atas dan bawah */
+}
+
+/* Mengatur gaya untuk tombol */
+.login-container button {
+  width: 100%; /* Lebar penuh */
+  padding: 12px; /* Padding dalam */
+  background-color: rgb(192, 58, 58); /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Tanpa garis batas */
+  border-radius: 8px; /* Sudut melengkung */
+  font-size: 16px; /* Ukuran font */
+  cursor: pointer; /* Kursor pointer saat hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transisi untuk efek hover */
+}
+
+/* Mengatur gaya saat hover pada tombol */
+.login-container button:hover {
+  background-color: #c0392b; /* Warna saat hover */
+  transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+/* Mengatur gaya untuk tombol saat aktif */
+.login-container button:active {
+  transform: scale(0.95); /* Sedikit mengecil saat ditekan */
+}

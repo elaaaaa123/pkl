@@ -2,6 +2,7 @@
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
+    margin-bottom: 9rem;
 }
 
 .buku-digital-box {
@@ -43,12 +44,12 @@
 }
 
 .result-table th {
-    background-color: #312ecf;
+    background-color: #333;
     font-weight: bold;
 }
 
 .detail-button {
-    background-color: #007bff;
+    background-color: rgb(192, 58, 58);
     color: white;
     border: none;
     padding: 8px 12px;

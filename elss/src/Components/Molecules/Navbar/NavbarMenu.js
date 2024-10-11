@@ -1,14 +1,48 @@
-import React from 'react';
-import NavbarItem from '../../atoms/NavbarItem';
-import '../../../styles/Navbar.css'; // Impor file CSS dengan jalur yang benar
+// src/components/molecules/NavbarMenu.js
 
-const NavbarMenu = () => {
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import NavbarItem from '../../atoms/NavbarItem';
+import '../../../styles/Navbar.css'; // Sesuaikan jalur CSS jika perlu
+
+const NavbarMenu = ({ onLogout }) => {
   return (
-    <div className="navbar-menu">
-      <NavbarItem text="About" />
-      <NavbarItem text="Work" />
-      <NavbarItem text="Contact" />
-    </div>
+    <nav className="navbar-menu">
+      <div className="navbar-left">
+        {/* Logo di sebelah kiri */}
+        <img src="/img/satudata.png" alt="Logo" className="navbar-logo" /> {/* Jalur logo diperbarui */}
+        <span className="navbar-title">Satu Data</span> {/* Teks di samping logo */}
+      </div>
+      <div className="navbar-right">
+        {/* Gunakan NavLink untuk navigasi */}
+        <NavLink
+          to="/"
+          className="navbar-link"
+          activeClassName="active-link" // Styling aktif
+          exact
+        >
+          <NavbarItem text="Home" />
+        </NavLink>
+        <NavLink
+          to="/sektoral"
+          className="navbar-link"
+          activeClassName="active-link"
+        >
+          <NavbarItem text="Sektoral" />
+        </NavLink>
+        <NavLink
+          to="/buku-digital"
+          className="navbar-link"
+          activeClassName="active-link"
+        >
+          <NavbarItem text="Publikasi" />
+        </NavLink>
+        {/* Tombol logout */}
+        <button className="navbar-logout" onClick={onLogout}>
+          Logout
+        </button>
+      </div>
+    </nav>
   );
 };
 

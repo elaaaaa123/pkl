@@ -1,0 +1,60 @@
+/* NotFound.css */
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0e0e0, #bdbdbd); /* Warna background abu-abu yang lebih netral */
+    text-align: center;
+    padding: 20px;
+}
+
+.not-found-title {
+    font-size: 150px;
+    font-weight: 700;
+    color: #333; /* Mengganti warna judul menjadi lebih gelap untuk kontras */
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    animation: float 2s infinite;
+}
+
+.not-found-message {
+    font-size: 24px;
+    color: #555; /* Warna teks yang lebih gelap */
+    margin: 20px 0;
+    font-weight: 500;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333; /* Mengganti warna teks pada tombol agar lebih netral */
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-button:hover {
+    background-color: #f0f0f0; /* Warna hover lebih terang */
+    transform: translateY(-5px);
+}
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,63 @@
+/* src/styles/Home.css */
+
+.home-container {
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Ruang antara konten */
+    align-items: center; /* Vertikal tengah */
+    padding: 20px; /* Padding untuk keseluruhan konten */
+    background-color: #f8f9fa; /* Background ringan */
+}
+
+.home-content {
+    flex: 1; /* Konten mengambil ruang yang tersisa */
+    max-width: 600px; /* Maksimal lebar konten */
+    padding-right: 20px; /* Beri jarak kanan antara teks dan gambar */
+}
+
+.home-content h1 {
+    font-family: 'Muli', sans-serif; /* Menggunakan font modern */
+    font-size: 50px; /* Ukuran font besar untuk heading */
+    font-weight: 700; /* Font tebal untuk heading */
+    line-height: 1.2; /* Jarak antar baris */
+    margin-bottom: 20px; /* Jarak bawah heading */
+}
+
+.title-one {
+    color: rgb(31, 71, 145) ; /* Warna untuk "Satu Data" */
+}
+
+.title-two {
+    color: rgb(192, 58, 58); /* Warna berbeda untuk "Indonesia" */
+}
+
+
+.home-content h2 {
+    font-family: 'Muli', sans-serif; /* Menggunakan font modern */
+    font-size: 30px; /* Ukuran font besar untuk heading */
+    font-weight: 700; /* Font tebal untuk heading */
+    line-height: 1.2; /* Jarak antar baris */
+    color: #333; /* Warna teks gelap */
+    margin-bottom: 20px; /* Jarak bawah heading */
+}
+
+.home-content p {
+    font-family: 'Muli', sans-serif; /* Sama dengan heading */
+    font-size: 18px; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+    color: rgb(18, 81, 92); /* Warna teks sedikit lebih terang */
+    margin-bottom: 20px; /* Jarak bawah antara paragraf */
+}
+
+.home-image {
+    flex: 1; /* Gambar mengambil ruang yang tersisa */
+    display: flex; /* Flex untuk menyeimbangkan gambar */
+    justify-content: center; /* Pusatkan gambar */
+    padding-left: 20px; /* Beri jarak kiri antara gambar dan teks */
+}
+
+.home-image img {
+    max-width: 80%; /* Kurangi ukuran gambar agar lebih kecil */
+    height: auto; /* Menjaga rasio aspek */
+    border-radius: 10px; /* Efek sudut melengkung */
+    /* Hapus shadow */
+}
