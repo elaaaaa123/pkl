@@ -1,11 +1,11 @@
-// src/Routes/AppRoutes.js
-
 import React from 'react';
 import { Route, Routes, Navigate, useNavigate } from 'react-router-dom';
 import Login from './Login';
 import Home from './Home';
 import Sektoral from './Sektoral';
 import BukuDigital from './BukuDigital';
+import Dataset from './Dataset'; // Impor Dataset
+import DetailDataset from './DetailDataset'; // Impor DetailDataset
 import NotFound from './NotFound'; // Impor halaman 404
 
 import { isAuthenticated } from './loginService'; // Impor isAuthenticated
@@ -41,6 +41,12 @@ const AppRoutes = () => {
                 <Route path="/" element={isUserAuthenticated ? <Home onLogout={handleLogout} /> : <Navigate to="/login" />} />
                 <Route path="/sektoral" element={isUserAuthenticated ? <Sektoral /> : <Navigate to="/login" />} />
                 <Route path="/buku-digital" element={isUserAuthenticated ? <BukuDigital /> : <Navigate to="/login" />} />
+
+                {/* Tambahkan rute Dataset */}
+                <Route path="/dataset" element={isUserAuthenticated ? <Dataset /> : <Navigate to="/login" />} />
+
+                {/* Tambahkan rute DetailDataset */}
+                <Route path="/dataset/detail/:id" element={isUserAuthenticated ? <DetailDataset /> : <Navigate to="/login" />} />
 
                 {/* Rute 404 */}
                 <Route path="*" element={<NotFound />} />

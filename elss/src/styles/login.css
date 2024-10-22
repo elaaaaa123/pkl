@@ -81,3 +81,31 @@
 .login-container button:active {
   transform: scale(0.95); /* Sedikit mengecil saat ditekan */
 }
+
+.dataset-container {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: space-between; /* Menyediakan ruang antar kolom */
+  max-width: 1200px; /* Atur lebar maksimum kontainer */
+  margin: auto; /* Pusatkan kontainer */
+}
+
+.dataset-content {
+  display: flex; /* Menggunakan flexbox untuk kolom */
+  width: 100%; /* Mengatur lebar konten penuh */
+}
+
+.left-column {
+  flex: 0 0 30%; /* Atur lebar kolom kiri (30% dari lebar kontainer) */
+  padding-right: 20px; /* Tambahkan padding kanan untuk spasi */
+  max-height: 100vh; /* Jika ingin membatasi tinggi */
+  overflow-y: auto; /* Tambahkan scroll jika tinggi melebihi batas */
+}
+
+.right-column {
+  flex: 1; /* Kolom kanan mengambil sisa ruang yang tersedia */
+}
+
+.opd-list {
+  max-height: 400px; /* Misalnya, batasi tinggi list OPD */
+  overflow-y: auto; /* Tambahkan scroll jika list terlalu panjang */
+}

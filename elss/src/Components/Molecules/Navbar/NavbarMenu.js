@@ -37,6 +37,14 @@ const NavbarMenu = ({ onLogout }) => {
         >
           <NavbarItem text="Publikasi" />
         </NavLink>
+        {/* Tambahkan link ke halaman Dataset */}
+        <NavLink
+          to="/dataset"
+          className="navbar-link"
+          activeClassName="active-link"
+        >
+          <NavbarItem text="Dataset" />
+        </NavLink>
         {/* Tombol logout */}
         <button className="navbar-logout" onClick={onLogout}>
           Logout

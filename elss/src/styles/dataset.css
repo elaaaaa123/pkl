@@ -1,0 +1,101 @@
+/* Container untuk seluruh komponen dataset */
+.dataset-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Warna latar belakang */
+  margin-top: 50px; /* Tambahkan margin atas jika diperlukan */
+}
+
+/* Judul dataset */
+.dataset-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Center align judul */
+}
+
+/* Konten dataset */
+.dataset-content {
+  display: flex; /* Flexbox untuk layout dua kolom */
+}
+
+/* Kolom kiri */
+.left-column {
+  flex: 1; /* Kolom kiri mengambil ruang yang tersedia */
+  padding-right: 20px;
+}
+
+/* Kolom kanan */
+.right-column {
+  flex: 2; /* Kolom kanan mengambil lebih banyak ruang */
+}
+
+/* Input pencarian */
+.dataset-input {
+  margin-bottom: 20px;
+}
+
+/* Daftar OPD */
+.opd-list {
+  max-height: 400px; /* Batas tinggi untuk daftar OPD */
+  overflow-y: auto; /* Scroll jika daftar terlalu panjang */
+  margin-top: 50px;
+}
+
+/* Item OPD */
+.opd-item {
+  cursor: pointer; /* Menunjukkan bahwa item dapat diklik */
+  margin-bottom: 10px;
+  transition: background-color 0.3s; /* Animasi latar belakang */
+}
+
+/* Mengubah latar belakang saat item OPD terpilih */
+.opd-item.selected {
+  background-color: #d1ecf1; /* Warna latar belakang untuk item terpilih */
+}
+
+/* Item dataset */
+.data-item {
+  cursor: pointer; /* Menunjukkan bahwa item dapat diklik */
+  margin-bottom: 10px;
+  transition: transform 0.3s; /* Animasi saat hover */
+}
+
+/* Efek hover pada item dataset */
+.data-item:hover {
+  transform: scale(1.02); /* Membesarkan sedikit saat hover */
+}
+
+/* Gaya untuk card body */
+.card-body {
+  padding: 15px;
+  background-color: #ffffff; /* Warna latar belakang card */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Judul card */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Teks dalam card */
+.card-text {
+  font-size: 14px;
+  color: #555; /* Warna teks yang lebih gelap */
+}
+
+/* Pesan kesalahan */
+.error-message {
+  color: red; /* Warna merah untuk pesan kesalahan */
+  text-align: center; /* Center align pesan kesalahan */
+  margin-top: 20px; /* Tambahkan jarak atas untuk pesan kesalahan */
+}
+
+/* Gaya untuk loading dan tidak ada data ditemukan */
+.result-list p {
+  text-align: center; /* Center align teks */
+  font-size: 16px;
+  color: #777; /* Warna abu-abu untuk teks */
+  margin-bottom: 20px; /* Tambahkan jarak di bawah teks */
+}
